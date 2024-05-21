@@ -19,7 +19,7 @@
       {
         "provider": "github",
         "owner": "sayyedsiddique",
-        "repo": ""
+        "repo": "electron-auto-update"
       }
     ]
   },
