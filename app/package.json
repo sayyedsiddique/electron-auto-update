@@ -1,6 +1,6 @@
 {
   "name": "electron-app",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "My test electron app",
   "main": "main.js",
   "scripts": {
@@ -15,14 +15,13 @@
     "releaseType": "release"
   },
   "build": {
-    "appId": "com.coderjeet.autoupdater",
-    "productName": "Autoupdater app",
-    "win": {
-      "target": "nsis"
-    },
-    "directories": {
-      "output": "dist"
-    }
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "sayyedsiddique",
+        "repo": ""
+      }
+    ]
   },
   "author": "CoderJeet",
   "license": "ISC",
@@ -32,6 +31,8 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
-    "electron-updater": "^5.3.0"
+    "electron-log": "^5.1.4",
+    "electron-updater": "4.6.5",
+    "path": "^0.12.7"
   }
 }
